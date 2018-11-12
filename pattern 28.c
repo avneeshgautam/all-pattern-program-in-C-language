@@ -1,0 +1,34 @@
+/*
+28)
+	    1
+	   121
+	  12321
+	 1234321
+	  12321
+	   121
+	    1
+*/
+ #include<stdio.h>
+ void main(){
+ 	int i,j,k,n,l;
+ 	printf("\n Enter the number:");
+ 		scanf("%d",&n);
+ 	for(i=1;i<=n;i++){
+ 		for(l=(n);l>(i);l--)
+ 			printf(" ");
+ 		for(j=1;j<=i;j++)
+ 			printf("%d",j);
+ 		for(k=i-1;k>0;k--)
+ 			printf("%d",k);
+ 		printf("\n");
+	 }
+	 for(i=n-1;i>=1;i--){
+	 	for(l=(i);l<(n);l++)
+			 printf(" ");
+	 	for(j=1;j<i;j++)
+	 		printf("%d",j);
+	 	for(k=i;k>0;k--)
+	 		printf("%d",k);
+	 	printf("\n");
+	 }
+ }
